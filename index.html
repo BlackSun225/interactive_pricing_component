@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-CI">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Interactive pricing component main</title>
+    <link rel="icon" type="x-icon/image" href="images/favicon-32x32.png"/>
+    <link rel="stylesheet" href="interactive.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </header>
+      <div class="screen">
+        <div class="top">
+          <div>
+            <p id="pageviews">100K PAGEVIEWS</p>
+            <div><span id="price">$16.00</span><p>/ month</p></div>
+            <div class="rbox">
+              <input type="range" step="10" min="0" max="100" id="billRange" />
+            </div>
+          </div>
+          <div id="billing">
+            <span>Monthly Billing</span>
+            <div id="switch"><div class="circle"></div></div>
+            <span>Yearly Billing</span>
+            <span class="discount">25% discount</span>
+          </div>
+        </div>
+        <div class="bot">
+          <ul>
+            <li>Unlimited websites</li>
+            <li>100% data ownership</li>
+            <li>Email reports</li>
+          </ul>
+          <button>Start my trial</button>
+        </div>
+      </div>
+    </main>
+    <script src="interactive.js"></script>
+  </body>
+</html>
