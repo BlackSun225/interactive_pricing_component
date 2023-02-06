@@ -77,6 +77,23 @@ header p{
 #billRange::-webkit-slider-thumb:active {
   background-color: hsl(174, 86%, 38%);
 }
+#billRange::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: hsl(174, 86%, 45%) url("images/icon-slider.svg") no-repeat;
+  background-size: 50%;
+  background-position: center;
+  box-shadow: 0 10px 30px hsl(174, 86%, 45%);
+}
+#billRange::-moz-range-thumb:hover {
+  background-color:hsl(174, 78%, 61%);
+}
+#billRange::-moz-range-thumb:active {
+  background-color: hsl(174, 86%, 38%);
+}
 #billing {
   width: 100%;
   display: flex;
